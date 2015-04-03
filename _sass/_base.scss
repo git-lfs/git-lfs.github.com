@@ -6,8 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  background: $site_bg;
+}
+
 body{
-  background: $white;
   @include sans;
   color: $text_color;
   font-size: 16px;
