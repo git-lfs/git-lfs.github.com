@@ -4,7 +4,7 @@
 // site header
 
 .site-header {
-  padding: 30px 0;
+  padding: 20px 0 10px;
   border-bottom: 1px solid $border_color;
 
   @media (min-width: 700px) {
@@ -13,16 +13,24 @@
 }
 
 .site-title {
-  float: left;
   display: block;
+  text-align: center;
   height: 48px;
+
+  @include media_1 { float: left; }
+
+  .git-lfs-logo-svg {
+    width: 100%;
+    max-width: 412px;
+
+    @include media_min(800px) { width: 412px; }
+  }
 }
 
 .site-nav {
+  text-align: center;
 
-  @media (min-width: 700px) {
-    float: right;
-  }
+  @include media_1 { float: right; }
 
   .page-link {
     text-decoration: none;
