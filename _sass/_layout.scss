@@ -1,2 +1,29 @@
 // Layout styles
 // ---------------------------------------/
+
+// site header
+
+.site-header {
+  padding: 40px 0;
+  border-bottom: 1px solid $border_color;
+}
+
+.site-title {
+  float: left;
+  display: block;
+  height: 48px;
+}
+
+.site-nav {
+  float: right;
+
+  .page-link {
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 48px;
+
+    &:first-child { margin-left: 0; }
+  }
+}
