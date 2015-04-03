@@ -1,0 +1,11 @@
+# Site settings
+title: "Git Large File Storage"
+description: "site description goes here"
+
+url: "http://git-lfs.github.com"
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
