@@ -12,6 +12,7 @@ html {
 
 body{
   @include sans;
+  font-family: "adelle", Georgia, "Times New Roman", serif;
   color: $text_color;
   font-size: 16px;
   line-height: 1.5;
@@ -27,11 +28,25 @@ body{
   zoom: 1;
 }
 
-/* clearfix (now called group, via http://css-tricks.com/snippets/css/clear-fix/) */
+// clearfix (now called group,
+// via http://css-tricks.com/snippets/css/clear-fix/)
 .group:before,
 .group:after { content:""; display:table; }
 .group:after { clear:both; }
 .group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
+
+// link colors
+
+a {
+  color: $link_color;
+
+  &:hover {
+    text-decoration: none;
+    opacity: .8;
+  }
+  &:active,
+  &:focus { outline: none; }
+}
 
 ::-moz-selection {
     background: rgba(51,51,51,.8);
