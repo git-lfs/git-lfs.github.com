@@ -14,13 +14,28 @@
 }
 
 // media querie tools
-@mixin bp($screen_width) {
+
+@mixin media_max($screen_width) {
   @media (max-width: $screen_width) { @content; }
 }
 
-@mixin bp_main {
-  @media (max-width: 1440px) { @content; }
+@mixin media_min($screen_width) {
+  @media (min-width: $screen_width) { @content; }
 }
+
+@mixin media_1 {
+  @media (min-width: 700px) { @content; }
+}
+
+@mixin media_2 {
+  @media (min-width: 900px) { @content; }
+}
+
+@mixin media_3 {
+  @media (min-width: 1100px) { @content; }
+}
+
+// type utilities
 
 @mixin sans {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
