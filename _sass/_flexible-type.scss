@@ -1,0 +1,41 @@
+html {
+  font-size: 13px;
+  line-height: 1.4;
+
+  @media (min-width: 700px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 18px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+}
+
+h1 { font-size: 2.5rem; line-height: 1; }
+
+h2 { font-size: 1.8rem; line-height: 1.1; }
+
+h3 { font-size: 1.3rem; line-height: 1.2 }
+
+h4 { font-size: 1rem; }
+
+p { margin: 0 0 1rem 0; max-width: 42rem; }
+
+p.lead { font-size: 1.3rem; }
+
+p.fine-print {
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+strong { font-weight: 600; }
+
+em { font-style: italic; }
