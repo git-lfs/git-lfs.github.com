@@ -7,4 +7,4 @@ To preview:
 1. Clone locally: `git clone https://github.com/github/git-lfs.github.com.git`
 2. Run bundler: `bundle install`
 3. Run Jekyll server: `bundle exec jekyll serve`
-4. View in browser locally at: http://localhost:4000
+4. View in browser locally at: [localhost:4000](http://localhost:4000)
