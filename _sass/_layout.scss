@@ -50,15 +50,17 @@
   padding: 40px 0;
 }
 
-.gh-colphon {
+.gh-colophon {
   text-align: center;
   margin: 0 auto;
   display: block;
+  color: $brown;
 
   .octicon {
     font-size: 20px;
     position: relative;
     top: 1px;
-    color: $brown;
+
+    &.octicon-logo-github { top: 2px; }
   }
 }
