@@ -39,6 +39,7 @@ body{
 
 a {
   color: $link_color;
+  text-decoration: none;
 
   &:hover {
     text-decoration: none;

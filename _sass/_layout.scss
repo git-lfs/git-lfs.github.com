@@ -33,12 +33,32 @@
   @include media_1 { float: right; }
 
   .page-link {
-    text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
     font-size: 1.125rem;
     line-height: 48px;
 
     &:first-child { margin-left: 0; }
+  }
+}
+
+// site footer
+
+.site-footer {
+  background: $tan_darker;
+  border-top: 1px solid $border_color;
+  padding: 40px 0;
+}
+
+.gh-colphon {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+
+  .octicon {
+    font-size: 20px;
+    position: relative;
+    top: 1px;
+    color: $brown;
   }
 }
