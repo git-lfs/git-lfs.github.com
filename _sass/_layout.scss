@@ -64,3 +64,26 @@
     &.octicon-logo-github { top: 2px; }
   }
 }
+
+// grid
+
+.wrapper:before,
+.wrapper:after { content:""; display:table; }
+.wrapper:after { clear: both; }
+.wrapper {
+  max-width: 1084px;
+  padding: 0;
+  margin: 0 auto;
+  zoom: 1;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  &.column-half {
+    @include media_1 { width: 50%; }
+  }
+}

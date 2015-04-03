@@ -10,22 +10,11 @@ html {
   background: $site_bg;
 }
 
-body{
+body {
   @include sans;
   font-family: "adelle", Georgia, "Times New Roman", serif;
   color: $text_color;
-  font-size: 16px;
   line-height: 1.5;
-}
-
-.wrapper:before,
-.wrapper:after { content:""; display:table; }
-.wrapper:after { clear: both; }
-.wrapper {
-  max-width: 1084px;
-  padding: 0 30px;
-  margin: 0 auto;
-  zoom: 1;
 }
 
 // clearfix (now called group,
@@ -60,8 +49,26 @@ a {
     text-shadow: none;
 }
 
-// from adaptive-layout
+// button
 
-section { margin-bottom: 2rem; }
-img { margin-bottom: 1rem; }
-img.flex { display: block; width: 100%; }
+.button {
+  background: $tan;
+  border: 1px solid $border_color;
+  display: block;
+  @include border-radius(5px);
+  text-align: center;
+  font-size: 1.4285714286rem;
+  padding: 10px 30px;
+  font-weight: 600;
+  max-width: 350px;
+  margin: 20px 0;
+
+  & .octicon {
+    font-size: 1.4285714286rem;
+    margin-left: -5px;
+  }
+
+  @include media_1 {
+    display: inline-block;
+  }
+}
