@@ -55,11 +55,66 @@
       background: $tan_darker2;
       @include border-radius(5px);
       padding: 1rem;
+      border: 1px solid $border_color;
     }
   }
 
 }
 
-// benefits section
+// features section
+
+.features-list {
+  padding: 0;
+  margin: 2rem 0;
+  list-style: none;
+}
+
+.hero-octicon {
+  background: $tan_darker2;
+  @include border-radius(100px);
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @include media_1 {
+    height: 88px;
+    width: 88px;
+  }
+
+  .mega-octicon { line-height: 60px;
+
+    @include media_1 { line-height: 88px; }
+  }
+}
+
+.feature {
+  padding: 1rem 0;
+  overflow: hidden;
+
+  h3 {
+    font-size: 1.375rem;
+    margin: 0 0 1rem;
+    font-weight: 400;
+    color: $heading_color;
+  }
+
+  .hero-octicon {
+    @include media_1 {
+      float: left;
+      margin-right: 1rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .content {
+    @include media_1 {
+      padding-left: 104px;
+      padding-left: calc( 88px + 1rem);
+    }
+  }
+
+  p { margin-bottom: 0; }
+}
 
 // open source section

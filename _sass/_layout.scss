@@ -84,6 +84,6 @@
   padding-right: 1.5rem;
 
   &.column-half {
-    @include media_1 { width: 50%; }
+    @include media_2 { width: 50%; }
   }
 }
