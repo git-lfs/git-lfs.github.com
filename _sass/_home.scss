@@ -37,7 +37,26 @@
     }
   }
 
-  .how-it-works-graphic-svg { width: 100%; }
+  .graphic {
+    @include media_max(900px) {
+      padding-top: 2rem;
+      border-top: 1px solid $border_color;
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 1.5rem;
+      @include media_1 { display: none; }
+    }
+  }
+
+  .how-it-works-graphic-svg { width: 100%;
+
+    @include media_max(550px) {
+      path.word { display: none; }
+    }
+  }
 }
 
 // getting started section
