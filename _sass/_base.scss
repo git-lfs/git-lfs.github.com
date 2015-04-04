@@ -72,3 +72,14 @@ a {
     display: inline-block;
   }
 }
+
+// type styles
+
+.section-heading {
+  color: $red;
+  font-size: 1.375rem;
+  border-bottom: 1px solid $border_color;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}

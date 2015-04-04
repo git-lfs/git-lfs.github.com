@@ -1,6 +1,8 @@
 // Home styles
 // ---------------------------------------/
 
+// hero section
+
 .home-hero {
   background: $tan_darker;
   padding: 24px 0;
@@ -35,3 +37,29 @@
 
   .how-it-works-graphic-svg { width: 100%; }
 }
+
+// getting started section
+
+.install-steps {
+  padding: 0;
+  margin: 2rem 0;
+  list-style-position: inside;
+
+  li {
+    font-weight: 600;
+
+    p { font-weight: 400; }
+
+    pre {
+      font-weight: 400;
+      background: $tan_darker2;
+      @include border-radius(5px);
+      padding: 1rem;
+    }
+  }
+
+}
+
+// benefits section
+
+// open source section
