@@ -84,7 +84,10 @@
 
   .mega-octicon { line-height: 60px;
 
-    @include media_1 { line-height: 88px; }
+    @include media_1 {
+      line-height: 88px;
+      font-size: 42px;
+    }
   }
 }
 
