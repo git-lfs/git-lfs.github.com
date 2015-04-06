@@ -1,6 +1,6 @@
 # Site settings
 title: "Git Large File Storage"
-description: "site description goes here"
+description: "Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or GitHub Enterprise."
 
 url: "http://git-lfs.github.com"
 
