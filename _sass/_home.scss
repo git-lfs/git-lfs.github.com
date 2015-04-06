@@ -11,9 +11,8 @@
     font-size: 1.7142857143rem;
     font-weight: 600;
     color: $heading_color;
+    margin: 1rem 0;
   }
-
-  .description { margin-bottom: 0; }
 
   .button {
     margin-left: auto;
@@ -63,7 +62,7 @@
 
 .install-steps {
   padding: 0;
-  margin: 2rem 0;
+  margin: 1rem 0;
   list-style-position: inside;
 
   li {
@@ -86,7 +85,7 @@
 
 .features-list {
   padding: 0;
-  margin: 2rem 0;
+  margin: 1rem 0;
   list-style: none;
 }
 
