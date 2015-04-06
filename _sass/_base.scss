@@ -52,8 +52,9 @@ a {
 // button
 
 .button {
-  background: $tan;
-  border: 1px solid $border_color;
+  background: $aqua;
+  border: 1px solid $aqua_darker;
+  color: white;
   display: block;
   @include border-radius(5px);
   text-align: center;
@@ -79,7 +80,7 @@ a {
   color: $red;
   font-size: 1.375rem;
   border-bottom: 1px solid $border_color;
-  padding: 2rem 0;
-  margin-bottom: 2rem;
+  padding: 2rem 0 1rem;
+  margin-bottom: 1rem;
   font-weight: 600;
 }
