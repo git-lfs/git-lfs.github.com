@@ -1,6 +1,7 @@
 # Site settings
 title: "Git Large File Storage"
 description: "site description goes here"
+git-lfs-release: 0.5.0.pre2
 
 url: "http://git-lfs.github.com"
 
