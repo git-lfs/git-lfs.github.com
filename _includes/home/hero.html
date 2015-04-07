@@ -7,7 +7,14 @@
 
       <p class="description">Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or GitHub Enterprise.</p>
 
-      <a href="https://github.com/github/git-lfs/releases" class="button primary-cta"><span class="octicon octicon-cloud-download"></span> Download</a>
+      <a class="button primary-cta js-os-data" data-os-attr="href"
+         href="https://github.com/github/git-lfs/releases/latest"
+         data-os-mac="https://github.com/github/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-darwin-amd64-{{site.git-lfs-release}}.tar.gz"
+         data-os-windows="https://github.com/github/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-windows-amd64-{{site.git-lfs-release}}.zip"
+         data-os-linux="https://github.com/github/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-linux-amd64-{{site.git-lfs-release}}.tar.gz">
+        <span class="octicon octicon-cloud-download"></span>
+        Download
+      </a>
 
       <a href="https://github.com/github/git-lfs" class="secondary-cta">Or, view source</a>
 

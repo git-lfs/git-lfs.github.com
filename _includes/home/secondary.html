@@ -12,7 +12,15 @@
 
       <ol class="install-steps">
         <li>
-          <p><a href="https://github.com/github/assets-team/blob/master/projects/git-lfs">Download</a> and install the Git command line extension. You only have to set up Git LFS once.</p>
+          <p>
+            <a class="js-os-data" data-os-attr="href"
+               href="https://github.com/github/git-lfs/releases/latest"
+               data-os-mac="https://github.com/github/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-darwin-amd64-{{site.git-lfs-release}}.tar.gz"
+               data-os-windows="https://github.com/github/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-windows-amd64-{{site.git-lfs-release}}.zip"
+               data-os-linux="https://github.com/github/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-linux-amd64-{{site.git-lfs-release}}.tar.gz">
+               Download
+            </a>
+            and install the Git command line extension. You only have to set up Git LFS once.</p>
         </li>
         <li>
           <p>Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes). You can configure additional file extensions at anytime.</p>
