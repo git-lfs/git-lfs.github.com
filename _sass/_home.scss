@@ -58,12 +58,7 @@
     }
   }
 
-  .how-it-works-graphic-svg { width: 100%;
-
-    @include media_max(550px) {
-      path.word { display: none; }
-    }
-  }
+  .how-it-works-graphic { width: 100%; }
 }
 
 // getting started section
