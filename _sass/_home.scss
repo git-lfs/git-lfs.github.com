@@ -150,4 +150,22 @@
   p { margin-bottom: 0; }
 }
 
-// open source section
+// dot com signup banner
+
+.dot-com-signup {
+  display: block;
+  background: $tan_darker2;
+  border: 1px solid $tan_darker3;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  line-height: 3;
+  color: $tan_darker4;
+
+  span {
+    text-decoration: underline;
+    color: $aqua;
+  }
+}
+
