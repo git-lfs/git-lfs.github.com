@@ -49,11 +49,17 @@
   border-top: 1px solid $border_color;
   padding: 40px 0;
   margin-top: 2rem;
+
+  p { text-align: center;
+    @include media_1 { text-align: left; }
+  }
+
+  .sfc-link {
+    @include media_1 { text-align: right; }
+  }
 }
 
 .gh-colophon {
-  text-align: center;
-  margin: 0 auto;
   display: block;
   color: $brown;
 

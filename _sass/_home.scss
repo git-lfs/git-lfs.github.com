@@ -6,6 +6,7 @@
 .home-hero {
   background: $tan_darker;
   padding: 24px 0;
+  border-bottom: 1px solid $border_color;
 
   h1 {
     font-size: 1.7142857143rem;
@@ -27,6 +28,7 @@
     @include media_1 {
       margin-bottom: 0;
       margin-right: 20px;
+      margin-top: .5rem;
     }
   }
 
@@ -56,12 +58,7 @@
     }
   }
 
-  .how-it-works-graphic-svg { width: 100%;
-
-    @include media_max(550px) {
-      path.word { display: none; }
-    }
-  }
+  .how-it-works-graphic { width: 100%; }
 }
 
 // getting started section
@@ -108,11 +105,13 @@
     width: 88px;
   }
 
-  .mega-octicon { line-height: 60px;
+  .mega-octicon {
+    line-height: 60px;
+    color: $tan_darker4;
 
     @include media_1 {
       line-height: 88px;
-      font-size: 42px;
+      font-size: 38px;
     }
   }
 }
@@ -146,4 +145,22 @@
   p { margin-bottom: 0; }
 }
 
-// open source section
+// dot com signup banner
+
+.dot-com-signup {
+  display: block;
+  background: $tan_darker2;
+  border: 1px solid $tan_darker3;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  line-height: 3;
+  color: $tan_darker4;
+
+  span {
+    text-decoration: underline;
+    color: $aqua;
+  }
+}
+
