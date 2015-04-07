@@ -10,4 +10,5 @@ $ ->
   os = window.session.browser.os.toLowerCase()
   $('.js-os-data').each ->
     $el = $(this)
-    $el.attr $el.attr('data-os-attr'), $el.attr("data-os-#{os}")
+    val = $el.attr("data-os-#{os}")
+    $el.attr($el.attr('data-os-attr'), val) if val
