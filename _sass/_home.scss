@@ -161,7 +161,11 @@
   border-radius: 5px;
   font-size: 1.125rem;
   line-height: 3;
+  color: $tan_darker4;
 
-  span { text-decoration: underline; }
+  span {
+    text-decoration: underline;
+    color: $aqua;
+  }
 }
 
