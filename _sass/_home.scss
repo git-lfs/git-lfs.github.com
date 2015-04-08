@@ -162,12 +162,16 @@
   margin-top: 1rem;
   border-radius: 5px;
   font-size: 1.125rem;
-  line-height: 3;
+  padding: 1rem;
   color: $tan_darker4;
 
   span {
     text-decoration: underline;
     color: $aqua;
+  }
+
+  br {
+    @include media_1 { display: none; }
   }
 }
 
