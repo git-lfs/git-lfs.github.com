@@ -12,3 +12,13 @@ $ ->
     $el = $(this)
     val = $el.attr("data-os-#{os}")
     $el.attr($el.attr('data-os-attr'), val) if val
+
+
+# Event tracking for clicks on "Download" or Sign Up"
+$(document).on 'click', (e) ->
+  gaParams = $(e.target).closest('[data-ga-params]').attr('data-ga-params')
+  return unless window.ga && gaParams
+
+  gaParams = gaParams.split(',')
+  window.ga('send', 'event', 'Home Page', gaParams[0], gaParams[1])
+  return
