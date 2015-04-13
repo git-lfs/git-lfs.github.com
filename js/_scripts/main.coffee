@@ -10,8 +10,9 @@ $ ->
   os = window.session.browser.os.toLowerCase()
   $('.js-os-data').each ->
     $el = $(this)
-    val = $el.attr("data-os-#{os}")
-    $el.attr($el.attr('data-os-attr'), val) if val
+    attr = $el.attr('data-os-attr')
+    return unless val = $el.attr("data-os-#{os}")
+    if attr in ['text','html'] then $el[attr](val) else $el.attr(attr, val)
 
 
 # Event tracking for clicks on "Download" or Sign Up"
