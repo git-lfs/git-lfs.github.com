@@ -14,7 +14,12 @@ $ ->
     return unless val = $el.attr("data-os-#{os}")
     if attr in ['text','html'] then $el[attr](val) else $el.attr(attr, val)
 
-
+  if os == 'mac'
+    $('.js-mac').removeClass('visually-hidden')
+  else if os == 'linux'
+    $('.js-linux').removeClass('visually-hidden')
+    $('.download').addClass('visually-hidden')
+    
 # Event tracking for clicks on "Download" or Sign Up"
 $(document).on 'click', (e) ->
   gaParams = $(e.target).closest('[data-ga-params]').attr('data-ga-params')

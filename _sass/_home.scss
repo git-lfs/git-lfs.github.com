@@ -49,6 +49,10 @@
     }
   }
 
+  .secondary-download {
+    margin-top: .5rem;
+  }
+
   .graphic {
     @include media_max(900px) {
       padding-top: 2rem;
@@ -179,4 +183,3 @@
     @include media_1 { display: none; }
   }
 }
-
