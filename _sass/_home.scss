@@ -53,6 +53,16 @@
     margin-top: 1rem;
   }
 
+  // For Homebrew install script
+
+  code {
+    font-weight: 400;
+    background: $tan_darker2;
+    @include border-radius(5px);
+    padding: .15rem .5rem;
+    border: 1px solid $border_color;
+  }
+
   .graphic {
     @include media_max(900px) {
       padding-top: 2rem;
