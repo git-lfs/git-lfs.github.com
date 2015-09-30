@@ -157,9 +157,9 @@
   p { margin-bottom: 0; }
 }
 
-// dot com signup banner
+// dot com announcement banner
 
-.dot-com-signup {
+.dot-com-announcement {
   display: block;
   background: $tan_darker2;
   border: 1px solid $tan_darker3;
@@ -179,4 +179,3 @@
     @include media_1 { display: none; }
   }
 }
-
