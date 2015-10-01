@@ -61,7 +61,7 @@ a {
   font-size: 1.4285714286rem;
   padding: 10px 25px;
   font-weight: 600;
-  max-width: 350px;
+  max-width: 450px;
   margin: 20px 0;
 
   & .octicon {
@@ -83,4 +83,17 @@ a {
   padding: 2rem 0 1rem;
   margin-bottom: 1rem;
   font-weight: 600;
+}
+
+// states
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; 
 }
