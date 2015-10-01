@@ -18,8 +18,8 @@ $ ->
     $('.js-mac').removeClass('visually-hidden')
   else if os == 'linux'
     $('.js-linux').removeClass('visually-hidden')
-    $('.download').addClass('visually-hidden')
-    
+    $('.js-download').addClass('visually-hidden')
+
 # Event tracking for clicks on "Download" or Sign Up"
 $(document).on 'click', (e) ->
   gaParams = $(e.target).closest('[data-ga-params]').attr('data-ga-params')
