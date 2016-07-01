@@ -10,3 +10,20 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+twitter:
+  username: github
+
+logo: /images/tweet-promo.png
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - README.md
+  - script
