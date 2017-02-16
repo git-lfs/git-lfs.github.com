@@ -34,10 +34,12 @@
         <li>
           <p>Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes). You can configure additional file extensions at anytime.</p>
 <pre>git lfs track "*.psd"</pre>
+          <p>Make sure .gitattributes is tracked</p>
+<pre>git add .gitattributes</pre>
         </li>
         <li>
           <p>There is no step three. Just commit and push to GitHub as you normally would.</p>
-<pre>git add .gitattributes
+<pre>
 git add file.psd
 git commit -m "Add design file"
 git push origin master</pre>
