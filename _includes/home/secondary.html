@@ -24,12 +24,11 @@
                href="https://github.com/git-lfs/git-lfs/releases/latest"
                data-os-mac="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-darwin-amd64-v{{site.git-lfs-release}}.tar.gz"
                data-os-windows="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-windows-v{{site.git-lfs-release}}.exe"
-               data-os-linux="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-linux-amd64-v{{site.git-lfs-release}}.tar.gz">
-               Download
-            </a>
-            and install the Git command line extension. You only have to set up Git LFS once.
+               data-os-linux="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-linux-amd64-v{{site.git-lfs-release}}.tar.gz">Download</a>
+            and install the Git command line extension. Once downloaded and installed, set up Git LFS and its respective hooks by running:
           </p>
           <pre>git lfs install</pre>
+          <p>You'll need to run this in your repository directory, once per repository.</p>
         </li>
         <li>
           <p>Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes). You can configure additional file extensions at anytime.</p>
