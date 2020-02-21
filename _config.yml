@@ -28,3 +28,4 @@ exclude:
   - LICENSE.txt
   - README.md
   - script
+  - vendor/bundle/
