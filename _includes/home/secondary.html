@@ -25,16 +25,17 @@
                data-os-mac="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-darwin-amd64-v{{site.git-lfs-release}}.tar.gz"
                data-os-windows="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-windows-v{{site.git-lfs-release}}.exe"
                data-os-linux="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-linux-amd64-v{{site.git-lfs-release}}.tar.gz">Download</a>
-            and install the Git command line extension. Once downloaded and installed, set up Git LFS and its respective hooks by running:
+            and install the Git command line extension. Once downloaded and installed, set up Git LFS for your user account by running:
           </p>
           <pre>git lfs install</pre>
-          <p>You'll need to run this in your repository directory, once per repository.</p>
+          <p>You only need to run this once per user account.</p>
         </li>
         <li>
-          <p>Select the file types you'd like Git LFS to manage (or directly edit your .gitattributes). You can configure additional file extensions at anytime.</p>
+          <p>In each Git repository where you want to use Git LFS, select the file types you'd like Git LFS to manage (or directly edit your .gitattributes). You can configure additional file extensions at anytime.</p>
 <pre>git lfs track "*.psd"</pre>
-          <p>Make sure .gitattributes is tracked</p>
+          <p>Now make sure .gitattributes is tracked:</p>
 <pre>git add .gitattributes</pre>
+          <p>Note that defining the file types Git LFS should track will not, by itself, convert any pre-existing files to Git LFS, such as files on other branches or in your prior commit history. To do that, use the <a href="https://github.com/git-lfs/git-lfs/blob/master/docs/man/git-lfs-migrate.1.ronn?utm_source=gitlfs_site&amp;utm_medium=doc_man_migrate_link&amp;utm_campaign=gitlfs">git lfs migrate[1]</a> command, which has a range of options designed to suit various potential use cases.</p>
         </li>
         <li>
           <p>There is no step three. Just commit and push to GitHub as you normally would.</p>
