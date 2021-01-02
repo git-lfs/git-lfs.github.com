@@ -34,11 +34,11 @@
           <p>Note that defining the file types Git LFS should track will not, by itself, convert any pre-existing files to Git LFS, such as files on other branches or in your prior commit history. To do that, use the <a href="https://github.com/git-lfs/git-lfs/blob/master/docs/man/git-lfs-migrate.1.ronn?utm_source=gitlfs_site&amp;utm_medium=doc_man_migrate_link&amp;utm_campaign=gitlfs">git lfs migrate[1]</a> command, which has a range of options designed to suit various potential use cases.</p>
         </li>
         <li>
-          <p>There is no step three. Just commit and push to GitHub as you normally would.</p>
+          <p>There is no step three. Just commit and push to GitHub as you normally would; for instance, if your current branch is named <code>main</code>:</p>
 <pre>
 git add file.psd
 git commit -m "Add design file"
-git push origin master</pre>
+git push origin main</pre>
         </li>
       </ol>
 
