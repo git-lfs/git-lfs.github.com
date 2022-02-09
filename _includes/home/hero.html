@@ -6,26 +6,51 @@
       <h1 class="page-heading">An open source Git extension for versioning large files</h1>
 
       <p class="description">Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server like GitHub.com or GitHub Enterprise.</p>
-      <div class="js-download">
-        <a class="button primary-cta js-os-data" data-ga-params="download,button" data-os-attr="href"
-           href="https://github.com/git-lfs/git-lfs/releases/latest"
-           data-os-mac="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-darwin-amd64-v{{site.git-lfs-release}}.zip"
-           data-os-windows="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-windows-v{{site.git-lfs-release}}.exe">
-          <span class="octicon octicon-cloud-download"></span>
-          Download <span class="download-details">v{{site.git-lfs-release}}<span class="js-os-data" data-os-attr="text" data-os-mac=" (Mac)" data-os-Windows=" (Windows)"><span></span>
-        </a>
-      </div>
-      <div class="js-linux visually-hidden">
-        <a href="https://packagecloud.io/github/git-lfs/install" class="button primary-cta js-os-data" data-ga-params="download,packagecloud"><span class="octicon octicon-cloud-download"></span> Install <span class="download-details">v{{site.git-lfs-release}} via PackageCloud (Linux)</span></a>
-        <p class="secondary-download">or <a href="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-linux-amd64-v{{site.git-lfs-release}}.tar.gz" data-ga-params="download,button">Download v{{site.git-lfs-release}} (Linux)</a></p>
-      </div>
-      <div class="js-mac visually-hidden">
-        <p class="secondary-download">
-          <a href="http://brew.sh">Homebrew</a>: <code>brew install git-lfs</code><br>
-          <a href="https://www.macports.org">MacPorts</a>: <code>port install git-lfs</code>
+      <div class="js-windows visually-hidden">
+        <p>
+          <a class="button primary-cta" data-ga-params="download,button"
+              href="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-windows-v{{site.git-lfs-release}}.exe">
+            <span class="octicon octicon-cloud-download"></span>
+            Download <span class="download-details">v{{site.git-lfs-release}} (Windows)</span>
+          </a>
         </p>
       </div>
-
+      <div class="js-mac visually-hidden">
+        <p>
+          <a class="button primary-cta" data-ga-params="download,button"
+              href="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-darwin-amd64-v{{site.git-lfs-release}}.zip">
+            <span class="octicon octicon-cloud-download"></span>
+            Download <span class="download-details">v{{site.git-lfs-release}} (Mac - Intel Silicon)&nbsp;&nbsp;</span>
+          </a>
+        </p>
+        <p>
+          <a class="button primary-cta" data-ga-params="download,button"
+              href="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-darwin-arm64-v{{site.git-lfs-release}}.zip">
+            <span class="octicon octicon-cloud-download"></span>
+            Download <span class="download-details">v{{site.git-lfs-release}} (Mac - Apple Silicon)</span>
+          </a>
+        </p>
+        <p class="secondary-download">
+          <a href="http://brew.sh">Homebrew</a>: <code>brew install git-lfs</code><br>
+          <a href="https://www.macports.org">MacPorts</a>:&nbsp;&nbsp;&nbsp; <code>port install git-lfs</code>
+        </p>
+      </div>
+      <div class="js-linux visually-hidden">
+        <p>
+          <a class="button primary-cta" data-ga-params="download,packagecloud"
+              href="https://packagecloud.io/github/git-lfs/install">
+            <span class="octicon octicon-cloud-download"></span>
+            Install <span class="download-details">v{{site.git-lfs-release}} via PackageCloud (Linux)</span>
+         </a>
+        </p>
+        <p>
+          <a class="button primary-cta" data-ga-params="download,button"
+              href="https://github.com/git-lfs/git-lfs/releases/download/v{{site.git-lfs-release}}/git-lfs-linux-amd64-v{{site.git-lfs-release}}.tar.gz">
+            <span class="octicon octicon-cloud-download"></span>
+            Download <span class="download-details">v{{site.git-lfs-release}} (Linux - x86-64)</span>
+          </a>
+        </p>
+      </div>
     </div>
 
     <div class="column-half column graphic">
