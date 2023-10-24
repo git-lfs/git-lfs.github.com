@@ -1,8 +1,8 @@
 $ ->
-  os = window.session.browser.os.toLowerCase()
-  if os == 'mac'
+  platform = window.navigator.platform
+  if (platform.indexOf 'Mac') != -1
     $('.js-mac').removeClass('visually-hidden')
-  else if os == 'linux'
+  else if (platform.indexOf 'Linux') != -1
     $('.js-linux').removeClass('visually-hidden')
   else
     $('.js-windows').removeClass('visually-hidden')
